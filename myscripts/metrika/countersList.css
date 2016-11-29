@@ -1,0 +1,66 @@
+thead >tr {
+	 display:none;
+}
+tr.counters-table__body-row {
+	display:inline-block;
+	 float:left;
+	 width:900px;
+	 border-right:1px solid black;
+	 padding:0 5px;
+}
+
+/*Убираем всем td падинг и центруем*/
+td.counters-table__body-cell {
+	padding:0;
+	vertical-align:middle;
+	padding:0 5px 0 5px;
+	text-align:right;
+}
+
+/*Метки*/
+.counter-label-list {
+    display:none !important;
+}
+
+/*Под названием счетчика инфа*/
+.counters-table__info {
+	 display:none;
+}
+
+/*Кнопки отписаться и доступы*/
+td.counters-table__cell-grants{
+      width: 190px;
+}
+td.counters-table__cell-grants.counters-table__body-cell > div {
+	display: inline-block;
+}
+/*Кнопка Отписатся*/
+.counter-grant-unsubscribe {
+    margin-bottom:0 !important;
+}
+
+/*Проценты изменения*/
+span.counter-activity__changes {
+    display:none !important;
+}
+
+/*Двигаем название счетчика вправо*/
+td.counters-table__cell-title {
+	text-align:left !important;
+	padding:0 0px 0 30px !important;
+}
+
+/*Ширина визитам, хостам, посетителям*/
+td.counters-table__cell-visits, td.counters-table__cell-hits, td.counters-table__cell-users {
+	width:35px
+}
+
+/*Ширина первой td*/
+td.counters-table__cell-first {
+	width:50px;
+}
+
+/*Ширина ячейки с заголовком*/
+td.counters-table__cell-title{
+	 width:205px;
+}

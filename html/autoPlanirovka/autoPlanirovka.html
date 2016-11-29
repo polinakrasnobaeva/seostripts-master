@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../notmyscripts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../notmyscripts/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Автоматическая планировка</title>
+</head>
+
+<body>
+    <main>
+        <h1 style="margin-bottom: 2px;">Автоматическое составление планировки</h1>
+        <p style="margin-top: 0px;">почти автоматическое :-)</p>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#settings" data-toggle="tab">Настройка</a></li>
+            <li><a href="#planirovka" data-toggle="tab">Планировка</a></li>
+            <li><a href="#competitors" data-toggle="tab">Конкуренты</a></li>
+            <li><a href="#positions" data-toggle="tab">Позиции</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="settings">
+                <label for="keys">
+                    Внесите в поле ниже список ключевых фраз
+                    <br>
+                    <textarea name="" id="keys" cols="50" rows="15">
+                        тюль
+                        тюль для кухни
+                         тюль для зала
+                         тюль для спальни
+                         1с бухгалтерия
+                         1с предприятие</textarea>
+                </label>
+            </div>
+            <div class="tab-pane container" id="planirovka">
+                <button class="btn btn-default" id="go">Поехали!</button>
+                <button class="btn btn-default" id="downloadCsv">Скачать csv</button>
+
+                <div class="row">
+                    <br>
+                    <div class="table-responsive col-lg-8 panel panel-default">
+                        <div class="progress progress-striped active" style="display: none">
+                            <div class="progress-bar" id="progressbar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                <span class="sr-only">45% Complete</span>
+                            </div>
+                        </div>
+
+                        <table id="planTable" class="planTable table table-hover">
+                            <tr>
+                                <!--                                <th>№</th>-->
+                                <th>Фраза</th>
+                                <th>Доп. слова</th>
+                                <th>К/Нк</th>
+                                <th>Гл/Вн</th>
+                                <th class="issue"><span class="glyphicon glyphicon-search"></span></th>
+                            </tr>
+                            <tbody id="planTable_dad"></tbody>
+                        </table>
+
+
+                    </div>
+
+
+
+                    <div class="issueView col-lg-4">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="competitors">
+                <div class="container" id="competitors-block">
+<!--
+                    <div class="row concurent">
+
+
+                        <div class="col-md-2 ">xer.ru</div>
+                           <div class="col-md-10">
+                            <table class="table table-hover ">
+                                <tr>
+                                    <td>
+                                        /fda
+                                    </td>
+                                    <td>
+                                        ваыаыв - 1
+                                        <br> ваыаыв - 1
+                                        <br> ваыаыв - 1
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        /fafsdafafaf
+                                    </td>
+                                    <td>
+                                        ваыаыв - 1
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        /nvjhudshklfs
+                                    </td>
+                                    <td>
+                                        ваыаыв - 1
+                                        <br> ваыаыв - 1
+                                        <br>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+-->
+                </div>
+            </div>
+            <div class="tab-pane" id="positions">...</div>
+        </div>
+
+
+
+        <div class="right">
+            <table style="display: none;" id="resultTable">
+                <tr>
+                    <th>Фраза</th>
+                    <th>Жирные слова</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="clr"></div>
+
+
+    </main>
+
+
+    <script src="../../notmyscripts/jquery.js"></script>
+    <script src="../../notmyscripts/jquery-ui.js"></script>
+    <script src="../../notmyscripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="help_funcs.js"></script>
+    <script src="Competitor.class.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
+<!--
+аренда экскаватора погрузчика в ростове на дону
+аренда экскаватора смена
+услуги экскаватора
+услуги экскаватора в ростове на дону
+услуги экскаватора цена
+
+
+аренда асфальтоукладчика
+аренда асфальтоукладчика в ростове на дону
+асфальтоукладчик тротуарный аренда
+аренда техника асфальтоукладчик
+
+
+аренда бульдозера
+
+-->
+<!--
+                    <div class="container planTable">
+
+
+
+                        <div class="row">
+                            <div class="col-lg-1 number">№</div>
+                            <div class="col-lg-5 phrase">Фраза</div>
+                            <div class="col-lg-3 addWords">Доп. слова</div>
+                            <div class="col-lg-1 commerce">К/Нк</div>
+                            <div class="col-lg-1 internal">Гл/Вн</div>
+                            <div class="col-lg-1 issue">Выдача</div>
+                        </div>
+
+                    </div>
+-->
+<!--
+        <div class="centr">
+            <div class="planTable">
+                <header>
+                    <div class="number">№</div>
+                    <div class="phrase">Фраза</div>
+                    <div class="addWords">Доп. слова</div>
+                    <div class="commerce">К/Нк</div>
+                    <div class="internal">Гл/Вн</div>
+                    <div class="issue">Выдача</div>
+                </header>
+
+            </div>
+
+            <div class="issueView">
+
+            </div>
+        </div>
+-->
+<!--
+        <div class="left">
+
+            <label for="keys">Внесите в поле ниже список ключевых фраз</label>
+            <br>
+            <textarea name="" id="keys" cols="50" rows="15">1с бухгалтерия 1с предприятие</textarea>
+
+            <br>
+            <button id="go">Поехали!</button>
+        </div>
+-->

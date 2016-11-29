@@ -1,0 +1,247 @@
+main {
+   width: 98%;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.tab-pane {
+    width: 99%;
+    padding: 20px 0;
+}
+
+table.planTable th {
+    text-align: center;
+}
+
+
+table.planTable > tbody > tr > td {
+    padding: 1px;
+    text-align: center;
+}
+
+table.planTable td.phrase, table.planTable td.addWords {
+    text-align: left;
+}
+
+
+/*
+td.issue, th.issue, td.internal, td.commerce, th.internal, th.commerce {
+    width: 100px !important;
+}
+*/
+
+td.commerce, td.issue {
+    cursor: pointer;
+}
+
+a.issue {
+    display: block;
+}
+
+td.commerce:hover, td.issue:hover {
+    background-color: rgba(191, 215, 234, 0.4);
+}
+
+td.addWords span.glyphicon.glyphicon-remove {
+    top: 2px;
+    font-size: 13px;
+    margin-left: 2px;
+    cursor: pointer;
+    color: gainsboro;
+}
+
+td.addWords span.glyphicon.glyphicon-remove:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/*.popover-content {width: 400px;}*/
+
+div.popover {
+    /* width: 5550px; */
+    max-width: 550px;
+}
+.snippetsBlock {
+/*    position: relative;*/
+}
+
+.snippetsBlock > h3 {
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 7px 0;
+    font-size: 17px;
+}
+
+h3.bg-info.text-center:before {
+    content: 'Запрос ';
+    font-weight: normal;
+    line-height: 1;
+    color: #999;
+    font-size: 65%;
+}
+
+.snippet {
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 2px 5px 5px;
+}
+
+div.snippet:nth-child(odd) {
+    background-color: #F3F1F1;
+}
+
+.snippet > h4 {
+    margin: 0;
+}
+
+.snippet > h4 > a {
+    color: #004FDA;
+}
+
+.snippet > p.url {
+    margin-bottom: 3px;
+}
+
+.snippet > p.url > a {
+    color : #070;
+}
+
+.snippet > p.text {
+    display: none;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.concurent .table tr > td:first-child {
+    width: 70%;
+}
+
+.row.concurent {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+        padding: 2px;
+}
+
+span.glyphicon.glyphicon-remove {
+    cursor: pointer;
+}
+
+span.glyphicon.glyphicon-remove.concurent-remove {
+    font-size: 17px;
+}
+
+/*
+.left {
+    float: left;
+    width: 400px;
+}
+
+.right {
+    float: right;
+    width: 800px;
+}
+
+.centr {
+  min-height: 1000px;
+
+}
+
+.centr > div {
+    display: inline-block;
+        vertical-align: top;
+}
+
+.clr {
+ clear: both;
+}
+
+.planTable {
+    border: 1px solid;
+    display: inline-block;
+}
+
+.planTable > section, .planTable > header {
+    border-bottom: 1px solid #9E9E9E;
+}
+
+.planTable > header > div, .planTable > section > div {
+     border-right: 1px solid;
+    display: inline-block;
+    padding: 3px 20px 3px 3px;
+}
+
+.planTable > header > div {
+
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+.number {
+    width: 22px;
+    text-align: left;
+}
+
+.phrase {
+    width: 400px;
+    text-align: left;
+}
+
+.addWords {
+    width: 300px;
+    text-align: left;
+}
+
+.commerce {
+    width: 65px;
+    text-align: center;
+}
+
+.internal {
+    text-align: center;
+    width: 65px;
+}
+
+.snippetsBlock {
+    display: none;
+    width: 600px;
+
+}
+
+
+/*
+
+.planTable section > h2 {
+    border: 1px solid;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+
+.planTable section > .snippetsBlock {
+    display: none;
+    width: 95%;
+    margin: 0 20px;
+
+}
+
+.planTable .snippetsBlock > div {
+    padding: 0 0 5px 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid #9E9E9E;
+}
+
+.planTable .snippetsBlock div h3 a{
+    color : blue;
+    text-decoration: none;
+}
+
+.planTable .snippetsBlock div h3 {
+    margin: 0px;
+}
+
+.planTable .snippetsBlock div p {
+    margin: 0px;
+}

@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+
+    "name": "Seo Scripts",
+    "version": "1.5.16",
+
+    "description": "2016",
+    "icons": {
+        "16": "img/16x16.ico",
+        "32": "img/32x32.ico",
+        "48": "img/48x48.png",
+        "128": "img/logo_128x128.png"
+    },
+
+    "options_page": "options/options.html",
+
+    "permissions": [
+             "tabs", "storage", "http://*/*", "https://*/*"
+        ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "browser_action": {
+        "default_title": "Seo Scripts",
+        "default_icon": "img/logo_128x128.png",
+        "default_popup": "popup/popup.html"
+    }
+}
